@@ -14,7 +14,7 @@ const io = socketio(server);
 //Now integrating our socket.io
 
 //io.on() is an built-in method which is going to run when
-//we have an client connection with our io instance
+//we have an client connection with our io instance.
 //For client joing and client leaving
 io.on('connection', (socket) => {
     //This socket is going to be connected as client side socket
@@ -23,7 +23,6 @@ io.on('connection', (socket) => {
         console.log(`User has left`);
     })
 })
-
 
 app.use(router);
 
